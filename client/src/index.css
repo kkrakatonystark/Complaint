@@ -1,0 +1,444 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*****************    Navbar    ********************/
+
+body{
+  background-color: #a5dbf7;
+}
+
+.imgSize{
+  width: 55px !important;
+}
+
+.grad {
+  background-image: linear-gradient(to right, #2C3E50, #000000);
+}
+
+.nav-item {
+  margin: 0 20px 0 20px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.hrSmall {
+  margin: auto;
+  width: 85%;
+}
+
+@media only screen and (max-width: 768px) {
+  .collapse {
+    text-align: center;
+    justify-content: center !important;
+    
+  }
+}
+
+/******************  Login   ******************/
+#login ,#signup{
+
+  /*backface-visibility: -0.7;*/
+  height: auto;
+  position: relative;
+  opacity: 0.9;
+
+}
+
+#login::before,#signup::before {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#login form,#signup form {
+  font-weight: bold;
+  background-color: white;
+  width: 100%;
+  height: 55vh;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 2px solid white;
+  z-index: 2;
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: 2px;
+}
+
+#login form input,#signup form input {
+  z-index: 2;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 4px;
+  line-height: 2px;
+}
+
+#login form button,#signup form button {
+  width: 70%;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.login-section {
+  background: transparent;
+}
+
+.login-section form p {
+  font-weight: bold;
+  font-size: small;
+}
+
+Link {
+  text-decoration: none;
+}
+
+
+/************* Raise Complaint Form  *******************/
+
+label {
+  margin-bottom: 4px;
+}
+
+.body{
+  padding-top:89px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.baseCol{
+  /* background-image: linear-gradient(to right bottom, #051937, #194a6e, #3283a3, #58bfd4, #8efeff); */
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.raiseCard {
+  width: 65%;
+  margin: 50px auto;
+  padding-top: 20px;
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #a5dbf7;
+}
+
+.cardhead {
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.submitbtn {
+  display: block !important;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.RaiseComp{
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+@media only screen and (max-width:768px){
+  .raiseCard{
+    width: 80%;
+  }
+}
+/***************** View Complaint  ******************/
+
+.viewcomp {
+  width: 65%;
+  margin: 150px auto;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center ;
+  margin: 5px auto !important;
+  background-image: linear-gradient(to right, #2C3E50, #000000);
+  border-radius: 5px;
+  height: 80% ;
+  width: 94%;
+}
+
+
+.card-title  h2{
+  padding: 5px auto !important;
+}
+
+@media screen and (max-width:768px){
+  .card-title{
+    height: 75px !important;
+  }
+}
+
+/******************* Admin View ***********************/
+.admin {
+
+  margin: 50px auto !important;
+  width: 80%;
+}
+
+
+
+.action{
+  text-align: center;
+}
+td button{
+  margin:5px;
+  width: 29px;
+  border-radius: 2px;
+  z-index: 2;
+  box-shadow: 2px;
+}
+
+.accept{
+  background-color:#0fd64f;
+}
+
+.reject{
+  background-color: red;
+}
+
+.escalate{
+  background-color:rgb(0, 255, 208);
+}
+
+.textBold{
+  font-weight:500;
+  font-size: 20px;
+  margin-right:15px;
+}
+
+.filterSelect{
+  height: 30px;
+  font-size: 12px !important;
+  background-color: transparent !important;
+}
+
+.filterbtn{
+  width: 80px;
+  font-size: large;
+  border-radius: 15px;
+  background-color: #0fd64f;
+  border-color: #0fd64f;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/*******************Single View **********************/
+
+.title {
+  margin-top: 100px;
+  margin-bottom: -20px ;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large
+}
+
+.card-title{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px !important;
+  height: 50px;
+  width: 100% !important;
+}
+
+.compTitle{
+  margin:30px auto;
+}
+
+.compBody{
+  padding: 30pxs;
+}
+
+.card-title h4{
+  margin: 5px auto ;
+}
+
+.viewrow{
+  border:1px solid #000000;
+  text-align: center;
+  border-radius: 2px;
+}
+
+@media screen and (max-width:576px){
+  .viewrow{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .singleCont{
+    margin-top: -20px !important;
+  }
+
+  .title{
+    margin-top: 20px;
+  }
+  .card-title{
+    padding-top: 2px;
+  
+  }
+  .container{
+    margin-top: 5px !important;
+  }
+  .actionflex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .actionbtn{
+    margin-top: 10px;
+
+  }
+}
+
+.singleCont{
+  margin: 20px;
+
+}
+
+.viewrow  :nth-child(1){
+  font-weight: bold;
+}
+
+.viewrow  :nth-child(2){
+  font-weight: 450;
+}
+
+.viewrow p{
+  margin:3px auto 3px;
+}
+
+.complaintstatus{
+  margin: 10px auto  !important;
+  width: 63% !important;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+
+}
+
+
+.acceptbtn{
+  background-color:#0fd64f;
+  border-radius:20px;
+  width: 130px !important;
+  height: 30px;
+  margin: 3px;
+  box-shadow: green;
+}
+
+.rejectbtn{
+  background-color: red;
+  border-radius:20px;
+  width: 130px !important;
+  margin:3px 20px ;
+  height: 30px;
+  box-shadow: crimson;
+}
+
+.escalatebtn{
+  background-color:rgb(0, 255, 208);
+  border-radius:20px;
+  height: 30px;
+  width: 130px !important;
+  box-shadow:#194a6e;
+
+}
+
+.actionbtn{
+  z-index:5;
+}
+.actionbtn:hover{
+  cursor: pointer;
+}
+
+
+/*****************   Home Page **************************/
+
+.home {
+  margin-top: 57px;
+  background-color: #a5dbf7;
+  overflow: hidden;
+}
+
+.left {
+  padding: 0px !important;
+  height: calc(100vh-40px);
+}
+
+.left img {
+  margin: auto;
+  width: 100% !important;
+}
+
+.right {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #a5dbf7;
+  padding: 0 !important;
+}
+
+.rightup {
+  width: 100%;
+  height: 30vh;
+  background-color: #a5dbf7;
+  margin: 0 !important;
+}
+
+.rightdown {
+  width: 100%;
+  height: 70vh;
+}
+
+.rightdown .upbtn {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto 20px;
+  font-weight: 450;
+  margin-top: 53px;
+  border-radius: 12px;
+  border-color: #a5dbf7;
+  box-shadow: #a5dbf7 !important;
+  background-image: linear-gradient(to right, #D1BAD2, #2884B8);
+  z-index: 5;
+  align-items: center !important;
+}
+
+.rightdown .downbtn {
+  font-weight: 450;
+  box-shadow: #7EE8FA;
+  width: 120px;
+  height: 120px;
+  margin: 5px auto !important;
+  margin-top: -84px;
+  border-radius: 12px;
+  border-color: #7EE8FA;
+  z-index: 5;
+  background-image: linear-gradient(to right, #7EE8FA, #EEC0C6);
+
+}
+
+.rightdowna{
+  height: 10%;
+}
